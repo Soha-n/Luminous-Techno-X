@@ -7,10 +7,8 @@ const LoginPage = ({ setIsAuthenticated }) => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-
-    // Mock login validation (replace with real authentication logic)
     if (username === 'user' && password === 'password') {
-      setIsAuthenticated(true);  // Successful login
+      setIsAuthenticated(true); 
     } else {
       setError('Invalid credentials. Please try again.');
     }
